@@ -1,5 +1,69 @@
 *{
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box; 
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+html,body{
+	height: 100%;
+}
+
+a{text-decoration: none;color: white}
+
+.container{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.container-corpo{
+	max-width: 1024px;
+}
+.w60{max-width: 60%;}
+.clear{clear: both;}
+							/*Header*/
+
+header.header-principal {
+	padding: 40px 0;
+	background-image: url("../images/capa.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 800px;
+}
+section.navegacao{
+	display: flex;
+	justify-content: space-between;
+}
+.navegacao > img{
+	max-width: 150px;
+}
+.menu-navegacao > ul > li{
+	display: inline-block;
+	padding: 0 15px;
+}
+.menu-navegacao > ul > li a{
+	font-size: 16px;
+	font-weight: lighter;
+}
+.menu-navegacao > ul > li a:hover{
+	text-decoration: underline;
+}
+section.cta{
+	display: flex;
+	flex-direction: row;
+	float: right;
+	padding: 250px 0;
+}
+.cta-elements{
+	color: white;
+}
+.cta-elements > h2{
+	font-size: 40px;
+	font-weight: lighter;
+}
+.cta-elements > p{
+	font-size: 16px;
+	font-weight: lighter;
 }
