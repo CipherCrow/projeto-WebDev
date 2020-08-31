@@ -19,8 +19,11 @@ a{text-decoration: none;color: white}
 
 .container-corpo{
 	max-width: 1024px;
+	padding: 0 2%;
+	margin: 0 auto;
 }
-.w60{max-width: 60%;}
+.w65{max-width: 65%;}
+.w50{max-width: 50%;}
 .clear{clear: both;}
 							/*Header*/
 
@@ -30,13 +33,14 @@ header.header-principal {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 800px;
+	height: 100vh;
+	max-height: 800px;
 }
 section.navegacao{
 	display: flex;
 	justify-content: space-between;
 }
-.navegacao > img{
+.navegacao > a > img{
 	max-width: 150px;
 }
 .menu-navegacao > ul > li{
@@ -67,3 +71,10 @@ section.cta{
 	font-size: 16px;
 	font-weight: lighter;
 }
+
+							/*Serviços*/
+							/*Sessãop2p*/
+							/*Equipe*/
+							/*Contato*/
+							/*footer*/
+							/*Responsivo*/
