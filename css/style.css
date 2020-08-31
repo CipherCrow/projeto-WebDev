@@ -9,7 +9,7 @@ html,body{
 	height: 100%;
 }
 
-a{text-decoration: none;color: white}
+a{text-decoration: none;color: white;}
 
 .container{
 	max-width: 1280px;
@@ -22,12 +22,12 @@ a{text-decoration: none;color: white}
 	padding: 0 2%;
 	margin: 0 auto;
 }
-.w65{max-width: 65%;}
-.w50{max-width: 50%;}
+.w65{width: 65%;}
+.w50{width: 50%;}
 .clear{clear: both;}
 							/*Header*/
 
-header.header-principal {
+header#header-principal {
 	padding: 40px 0;
 	background-image: url("../images/capa.png");
 	background-size: cover;
@@ -56,9 +56,8 @@ section.navegacao{
 }
 section.cta{
 	display: flex;
-	flex-direction: row;
-	float: right;
-	padding: 250px 0;
+	margin: 250px 0;
+	margin-left: 400px;
 }
 .cta-elements{
 	color: white;
@@ -73,8 +72,61 @@ section.cta{
 }
 
 							/*Serviços*/
+
+section#painel-servicos{
+	padding: 0px 0;
+	height: auto;
+	background-color: #472562;
+	color: white;
+}
+#painel-servicos > .container-corpo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.servicos-texto h2{
+	padding-left: 5px; 
+	font-size: 26px;
+	padding-bottom: 10px;
+	font-weight: lighter;
+}
+.servicos-texto p{
+	font-weight: normal;
+	font-size: 16px;
+	padding-bottom: 5px;
+	font-weight: lighter;
+}
+.servicos-texto ul{
+	list-style-position: inside;
+}
+.servicos-texto ul > li{
+	padding: 2px 0;
+	font-size: 15px;
+	font-weight: lighter;
+}
+.servicos-texto a > button{
+	margin-top: 20px;
+	padding: 15px 20px;
+	border-radius: 50px;
+	background-color: #FF703D;
+	border: none;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+}
+div.device-image{
+	max-width: 100%;
+	height: 300px;
+	background-image: url("../images/device.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
 							/*Sessãop2p*/
 							/*Equipe*/
 							/*Contato*/
 							/*footer*/
 							/*Responsivo*/
+
+@
