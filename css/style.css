@@ -25,6 +25,8 @@ a{text-decoration: none;color: white;}
 .w65{width: 65%;}
 .w50{width: 50%;}
 .clear{clear: both;}
+.desktop{}
+.mobile{display: none;}
 							/*Header*/
 
 header#header-principal {
@@ -55,9 +57,39 @@ section.navegacao{
 	text-decoration: underline;
 	cursor: pointer;
 }
+.menu-mobile i{
+	color: white;
+	font-size: 25px;
+	cursor: pointer;
+}
+/*Pendente uso de javascript no menu*/
+.menu-mobile ul{
+	display: none;
+	position: absolute;
+	padding: 65px 0;
+	width: 100%;
+	left: 0;
+	top: 0;
+	list-style: none; 
+}
+.menu-mobile ul li{
+	text-align: center;
+	border: 1px solid black;
+	padding: 2px 0; 
+	background-color: white;
+}
+.menu-mobile ul li:hover{ 
+	transition: 0.7s;
+	background-color: rgb(230,230,230);
+}
+.menu-mobile ul li a{
+	color: #472562;
+	padding: 0 50px;	
+}
+
 .cta-elements{
 	float: right;
-	margin: 250px 0;
+	margin-top: 250px;
 	margin-left: 400px;
 	color: white;
 }
@@ -78,7 +110,8 @@ section#painel-servicos{
 }
 .servicos-texto{
 	float: left;
-	padding: 20px;
+	margin-top: 40px;
+	margin-left: 90px;
 }
 .servicos-texto h2{
 	padding-left: 5px; 
@@ -101,8 +134,9 @@ section#painel-servicos{
 	font-weight: lighter;
 }
 .servicos-texto a > button{
+	width: 140px;
+	height: 40px;
 	margin-top: 20px;
-	padding: 15px 20px;
 	border-radius: 50px;
 	background-color: #FF703D;
 	border: none;
@@ -113,6 +147,7 @@ section#painel-servicos{
 div.device-image{
 	float: right;
 	max-width: 100%;
+	position: relative;
 	height: 300px;
 	background-image: url("../images/device.png");
 	background-repeat: no-repeat;
@@ -161,18 +196,40 @@ section#id{
 	.container-corpo > .servicos-texto{
 		float: none;
 		text-align: center;
+		margin: 0px;
+		padding: 20px;
+		padding-left: 0px;
+	}
+	.servicos-texto ul{
+		display: inline-block;
+		width: auto;
+	}
+	.servicos-texto ul > li{
+		text-align: left;
+	}
+	.servicos-texto a{
+		display: block;
 	}
 	div.device-image{
 		display: none;
 	}
 	.cta-elements{
 		margin-left: 0px;
-		margin: 30vh 0;
+		width: 100%;
+		margin: 25vh 0;
 		float: none;
 	}
 }
 @media screen and (max-width: 425px){
-	
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: initial;
+	}
+	.cta-elements{
+		margin: 20vh 0;
+	}
 	.cta-elements h2{
 		font-size: 30px;
 	}
