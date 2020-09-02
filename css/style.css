@@ -264,6 +264,92 @@ div.slider-bullets{
 	margin-right: 8px; 
 }
 							/*Contato*/
+
+section#contato{
+	background-color: #472563;
+	padding: 80px 0;
+}
+.contato-form{
+	float: left;
+}
+.contato-form h2{
+	color: white;
+	font-size: 24px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+}
+.contato-form p{
+	font-size: 16px;
+	color: white;
+	font-weight: lighter;
+	max-width: 400px;
+}
+.contato-form form{
+	margin:15px 0;
+}
+.contato-form form input[type=text],
+.contato-form form input[type=email]{
+	padding-left: 20px;
+	width: 100%;
+	max-width: 480px;
+	margin-top: 10px;
+	line-height: 58px;
+	height: 40px;
+	border: 1px solid rgb(200,200,200); 
+}	
+.contato-form textarea{
+	width: 100%;
+	max-width: 480px;
+	padding: 15px;
+	border: 1px solid rgb(200,200,200);
+	height: 160px;
+	margin-top: 10px;
+	resize: vertical;
+}
+.contato-form form input[type=submit]{
+	width: 140px;
+	height: 40px;
+	border-radius: 50px;
+	background-color: #FF703D;
+	border: none;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.mapa{
+	float: left;
+	padding: 0 2%;
+}
+.mapa h2{
+	color: white;
+	font-size: 24px;
+	font-weight: lighter;
+	margin-bottom: 10px;
+}
+.map-wrapper2{
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+.map-wrapper{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 100%;
+}	
+#js-mapa{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	
+	background-color: white;
+	border: 2px solid grey; 
+}				
 							/*footer*/
 							/*Responsivo*/
 
@@ -300,8 +386,29 @@ div.slider-bullets{
 		margin: 25vh 0;
 		float: none;
 	}
+	.equipe-texto{
+		text-align: center;
+	}
+	.contato-form{
+		text-align: center;
+	}
+	.mapa{
+		text-align: center;
+	}
 }
 @media screen and (max-width: 580px){
+	.mapa{
+		margin-top: 30px;
+	}
+	.map-wrapper2{
+		display: inline-block;
+		max-width: none;
+		padding-top: 80%; 
+	}
+	.map-wrapper{
+		padding-top: 0px;
+		height: 100%;
+	}
 	.w50{
 		width: 100%;
 	}
@@ -311,6 +418,7 @@ div.slider-bullets{
 	.equipe-icones{
 		padding: 40px 0;
 	}
+
 }
 @media screen and (max-width: 425px){
 	.desktop{

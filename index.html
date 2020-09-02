@@ -133,23 +133,31 @@
 	</section>
 	<section id="contato">
 		<div class="container-corpo">
-			<div class="contato-form">
+			<div class="contato-form w50">
 				<h2>Entre em Contato</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque lobortis iaculis. In hac habitasse platea dictumst. Cras vitae purus metus.</p>
-				<form>
+				<form method="post">
 					<input type="text" name="nome" placeholder="Nome *">
 					<input type="email" name="email" placeholder="Seu melhor email *">
-					<textarea placeholder="Sua mensagem aqui *"></textarea>
+					<textarea name="mensagem" placeholder="Sua mensagem aqui *"></textarea>
 					<input type="submit" name="btnsubmit" value="Enviar!">
 				</form>
 			</div><!--Contato-->
 
-			<div class="mapa">
+			<div class="mapa w50">
 				<h2>Faça uma visita</h2>
-				MAPA FICARÁ AQUI
+				<div class="map-wrapper2">				
+					<div class="map-wrapper">
+						<div id="js-mapa">
+							MAPA FICARÁ AQUI
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
 			</div>
 
 		</div><!--container-->
+		<div class="clear"></div>
 	</section>
 	<footer>
 		<p>Todos os direitos reservados.</p>
