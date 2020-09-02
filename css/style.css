@@ -189,6 +189,7 @@ section#id{
 .equipe-texto > .texto-wrapper{
 	float: right;
 	max-width: 600px;
+	padding: 0 30px;
 }
 .equipe-texto h2{
 	font-weight: lighter;
@@ -241,6 +242,7 @@ div.single-autor{
 	float: left;
 	width: 100%;
 	margin-top: 10px;
+	padding: 0 2%;
 }	
 .texto-autor p{
 	color: #232323;
@@ -299,6 +301,17 @@ div.slider-bullets{
 		float: none;
 	}
 }
+@media screen and (max-width: 580px){
+	.w50{
+		width: 100%;
+	}
+	.equipe-texto{
+		padding: 40px 0;
+	}
+	.equipe-icones{
+		padding: 40px 0;
+	}
+}
 @media screen and (max-width: 425px){
 	.desktop{
 		display: none;
@@ -312,7 +325,5 @@ div.slider-bullets{
 	.cta-elements h2{
 		font-size: 30px;
 	}
-	.w50{
-		width: 100%;
-	}
+	
 }
