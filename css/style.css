@@ -351,6 +351,21 @@ section#contato{
 	border: 2px solid grey; 
 }				
 							/*footer*/
+
+footer{
+	padding: 40px 0;
+	background-color: #192123;
+	text-align: center;
+}
+footer > .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: white;
+}	
+footer p{
+	font-size: 16px;
+}						
 							/*Responsivo*/
 
 @media screen and (max-width: 1024px){
@@ -399,6 +414,7 @@ section#contato{
 @media screen and (max-width: 580px){
 	.mapa{
 		margin-top: 30px;
+
 	}
 	.map-wrapper2{
 		display: inline-block;
