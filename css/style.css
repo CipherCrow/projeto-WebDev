@@ -233,10 +233,11 @@ div.single-autor{
 	float: left;
 	width: 40px;
 	height: 40px;
+	background-image: url("../images/actor1.png");
+	background-size: 100% 100%;
 	border-radius: 20px;
 	position: relative;
-	top: -4px;
-	background-color: gray;
+	background-color: transparent;
 }	
 .texto-autor{
 	float: left;
