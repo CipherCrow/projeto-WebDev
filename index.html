@@ -22,7 +22,9 @@
 	<header id="header-principal">
 		<div class="container">
 			<section class="navegacao">
-				<a href=""><img src="images/logo-danki.png"></a>
+
+				<a href="index.html"><img src="images/logo-danki.png"></a>
+
 				<nav class="menu-navegacao desktop">
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -30,7 +32,7 @@
 						<li><a href="#pessoas">Sobre</a></li>
 						<li><a href="#contato">Contato</a></li>
 					</ul>
-				</nav>
+				</nav> <!-- desktop -->
 
 				<nav class="menu-mobile mobile">
 					<i class="fas fa-bars"></i>
@@ -40,23 +42,28 @@
 						<li><a href="#pessoas">Sobre</a></li>
 						<li><a href="#contato">Contato</a></li>
 					</ul>
-				</nav>
+				</nav> <!-- mobile -->
+
 			</section><!--nav-->
-		</div>
+		</div> <!-- container -->
+
 		<div class="container-corpo">
 			<section class="cta">
 				<div class="cta-elements">
+
 					<h2>Sistemas Próprios <br>
 					Para Empresas Autênticas</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eleifend commodo ipsum, vitae malesuada nisi convallis eget.</p>
+
 				</div><!--items-->
-				<div class="clear"></div>
-			</section>	
-		</div>
+			</section>	<!-- cta -->
+		</div> <!-- container corpo -->
+
 	</header><!--Header-->
 
 	<section id="painel-servicos">
 		<div class="container-corpo">
+
 			<div class="servicos-texto">
 				<h2>Desenvolvemos Sistemas Únicos</h2>
 				<p>Lorem Ipsum silor domor amet</p>
@@ -74,16 +81,16 @@
 			</div><!--Sessão letras-->
 
 			<div class="device-image w50"></div>
-			<div class="clear"></div>
 		</div><!--Container-->
 	</section>
 
 	<section id="pessoas">
 		<div class="container-corpo">
+
 			<div class="texto-pessoas">
 				<h2>Desenvolvido de pessoas para pessoas</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci commodo suscipit. Nunc ut viverra dui. Ut efficitur cursus diam a volutpat. Sed sagittis pharetra dolor, ac mollis sapien condimentum vitae. Ut in interdum tortor</p>
-			</div>
+			</div> <!-- texto-pessoas -->
 
 			<img src="images/mockup.jpg" alt="Painel que teria avaliaçoes" title="Painel de avaliaçoes" class="desktop">			
 		</div><!--container-->
@@ -92,31 +99,39 @@
 	<section id="equipe">
 		<div class="equipe-texto w50">
 			<div class="texto-wrapper">
+
 				<h2>Nosso time</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci commodo suscipit.</p>
-			</div>
-			<div class="clear"></div>
+
+			</div> <!-- texto-wrapper -->
 		</div><!--Sobre-texto-->
 
         <div class="equipe-icones w50">
+
            	<div class="single-autor">
            		<div class="titulo-autor">
+
            			<div class="wraper-titulo-autor">
            				<h2>Guilherme Grillo</h2>
            				<p>Co-Founder / Desenvolvedor</p>
-           			</div>
+           			</div><!-- titulowraper -->
+
            			<div class="img-autor"></div>
-           		</div>
+
+           		</div><!-- titulo-autor -->
 
            		<div class="texto-autor">
            			<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci.</p>
-           		</div>
+           		</div> <!-- texto-autor -->
+
            	</div><!--Single-->
+
            	<div class="slider-bullets">
-           		<span style="background-color: rgb(170,170,170);"></span>
+           		<span class="selected"></span>
            		<span></span>
            		<span></span>
-           	</div>
+           	</div> <!-- slider bullets -->
+
            	<!--<div class="single-programador">
            		<header>
            			<div class="texto-header">
@@ -130,44 +145,50 @@
            		<p>Proin sagittis, risus ut tempus condimentum, urna est volutpat augue, a placerat ligula magna tincidunt sapien. Ut tempus pulvinar ante, at euismod orci.</p>
            	</div>Single-->
            	<!--Javascript pendente-->
-           	<div class="clear"></div>
         </div><!--Programadores-->
-
-		<div class="clear"></div>
 	</section>
+
 	<section id="contato">
 		<div class="container-corpo">
+
 			<div class="contato-form w50">
+
 				<h2>Entre em Contato</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam scelerisque lobortis iaculis. In hac habitasse platea dictumst. Cras vitae purus metus.</p>
+
 				<form method="post">
 					<input type="text" name="nome" placeholder="Nome *">
 					<input type="email" name="email" placeholder="Seu melhor email *">
 					<textarea name="mensagem" placeholder="Sua mensagem aqui *"></textarea>
 					<input type="submit" name="btnsubmit" value="Enviar!">
 				</form>
-			</div><!--Contato-->
+			</div><!--Contato form-->
 
 			<div class="mapa w50">
+
 				<h2>Faça uma visita</h2>
 				<div class="map-wrapper2">				
 					<div class="map-wrapper">
+
 						<div id="js-mapa">
-							<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Rua%20Eliseu%20Gomes%20DELMIRO%20GOUVEIA+(Meu%20mapa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='http://maps-generator.com/pt'>Maps-Generator</a> <script type='text/javascript' src='https://maps-generator.com/google-maps-authorization/script.js?id=f24c7177ba33c2cc94da75f73b42ada0691b0a15'></script>
-						</div>
-						<div class="clear"></div>
-					</div>
-				</div>
-			</div>
+							<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Rua%20Eliseu%20Gomes%20DELMIRO%20GOUVEIA+(Meu%20mapa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+						</div> <!-- js-mapa -->
+
+					</div> <!-- mapwrapper -->
+				</div> <!-- mapwrapper2 -->
+			</div> <!-- mapa -->
 
 		</div><!--container-->
+
 		<div class="clear"></div>
 	</section>
+
 	<footer>
+
 		<div class="container">
-			<p class="w50">Todos os direitos reservados.</p>
+			<p class="w50">&copy Todos os direitos reservados.</p>
 			<p class="w50">contato@dankicode.com</p>
-		</div>
+		</div> <!-- container -->
 		
 	</footer>
 </body>

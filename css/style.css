@@ -9,6 +9,7 @@ html,body{
 	height: 100%;
 }
 html{
+	scroll-behavior: smooth;
 	font-size: 10px;
 }
 
@@ -44,65 +45,106 @@ header#header-principal {
 section.navegacao{
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 .navegacao > a > img{
 	max-width: 15rem;
+	margin-left: 1rem;
 }
 .menu-navegacao > ul > li{
 	display: inline-block;
-	padding: 0 1.5rem;
+	margin: 0 1.5rem;
 }
 .menu-navegacao > ul > li a{
-	font-size: 1.6rem;
-	font-weight: lighter;
-}
-.menu-navegacao > ul > li a:hover{
-	text-decoration: underline;
+	font-size: 1.7rem;
+	font-weight: normal;
 	cursor: pointer;
+	border-bottom-color: #472562;
+	transition: .2s;
+	text-shadow: 0 .2rem .5rem rgba(0,0,0,.9);
+}
+.menu-navegacao > ul > li:hover a{
+	padding-bottom: .5rem;
+	color: rgba(0,0,0,.75);
+	opacity: .8;	
+	border-bottom: .4rem solid #472562;
+
 }
 .menu-mobile i{
 	color: white;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	cursor: pointer;
+	margin-right: 1rem; 
+	text-shadow: 0 .2rem .5rem rgba(0,0,0,.9);
 }
-/*Pendente uso de javascript no menu*/
 .menu-mobile ul{
 	display: none;
 	position: absolute;
-	padding: 6.5rem 0;
+	margin: 6.5rem 0;
 	width: 100%;
 	left: 0;
-	top: 0;
+	top: 1rem;
 	list-style: none; 
 }
 .menu-mobile ul li{
 	text-align: center;
 	border: .1rem solid black;
-	padding: .2rem 0; 
+	padding: .5rem 0; 
 	background-color: white;
+	transition: 0.7s;	
 }
 .menu-mobile ul li:hover{ 
-	transition: 0.7s;
-	background-color: rgb(230,230,230);
+	background-color: #472562;
+	color: white;
 }
 .menu-mobile ul li a{
+	font-size: 1.7rem;
 	color: #472562;
 	padding: 0 5rem;	
 }
-
-.cta-elements{
-	float: right;
-	margin-top: 25rem;
-	margin-left: 40rem;
+.menu-mobile ul li:hover a{
 	color: white;
+}
+		/*CTA*/
+header > .container-corpo{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.cta{
+	width: 100%;
+	height: 100%;	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.cta-elements{
+	color: white;
+	text-shadow: 0 .2rem .5rem rgba(0,0,0,.9);
 }
 .cta-elements > h2{
 	font-size: 4rem;
 	font-weight: lighter;
+	animation: hello .8s .5s forwards;
+	opacity: 0;
 }
 .cta-elements > p{
+	max-width: 60rem;
 	font-size: 1.6rem;
 	font-weight: lighter;
+	animation: hello .8s .8s forwards;
+	opacity: 0;	
+}
+@keyframes hello{
+	0%{
+		transform: translateY(12rem) rotateZ(10deg);
+
+	}
+	100%{
+		transform: translateY(0) rotate(0);
+		opacity: 1;
+	}
 }
 
 							/*Serviços*/
@@ -111,10 +153,16 @@ section#painel-servicos{
 	background-color: #472562;
 	color: white;
 }
+#painel-servicos > .container-corpo{
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	padding-bottom: 2rem;
+}
 .servicos-texto{
-	float: left;
 	margin-top: 4rem;
 	margin-left: 9rem;
+	text-shadow: 0 .2rem .5rem rgba(0,0,0,.9);
 }
 .servicos-texto h2{
 	padding-left: .5rem; 
@@ -146,12 +194,22 @@ section#painel-servicos{
 	font-size: 1.3rem;
 	color: white;
 	cursor: pointer;
+	transition: .3s;
+	box-shadow: 0 .2rem .3rem rgba(0,0,0,.5);
+}
+.servicos-texto a:hover > button{
+	opacity: .9;
+	color: rgba(0,0,0,.9);
+}
+.container-corpo > .image-wrapper{
+	position: relative;
 }
 div.device-image{
-	float: right;
 	max-width: 100%;
-	position: relative;
-	height: 30rem;
+	position: absolute;
+	bottom: 0rem;
+	right: 0rem;
+	height: 35rem;
 	background-image: url("../images/device.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -180,17 +238,19 @@ section#pessoas img{
 }							
 							/*Equipe*/
 
-section#id{
+section#equipe{
 	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 .equipe-texto{
 	background-color: #835FA7;
 	padding:14rem 0 9rem 0;
-	float: left;
 	color: white;
+	text-shadow: 0 .2rem .3rem rgba(0,0,0,.6);	
 }
 .equipe-texto > .texto-wrapper{
-	float: right;
 	max-width: 60rem;
 	padding: 0 3rem;
 }
@@ -205,23 +265,22 @@ section#id{
 	font-weight: lighter;
 }
 .equipe-icones{
-	float: left;
 	padding:14rem 0 9rem 0;
 	background-color: white;
 }
 div.single-autor{
 	max-width: 60rem;
-	float: left;
 	padding-left: 3rem;
 }
 .titulo-autor{
-	float: left;
 	width: 100%;
 	color: #232323;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 .wraper-titulo-autor{
 	/*width: calc(100% - 40px);*/
-	float: left;
 }
 .titulo-autor h2{
 	padding-right: 2rem;
@@ -233,7 +292,6 @@ div.single-autor{
 	font-weight: lighter;
 }
 .titulo-autor .img-autor{
-	float: left;
 	width: 4rem;
 	height: 4rem;
 	background-image: url("../images/actor1.png");
@@ -243,7 +301,6 @@ div.single-autor{
 	background-color: transparent;
 }	
 .texto-autor{
-	float: left;
 	width: 100%;
 	margin-top: 1rem;
 	padding: 0 2%;
@@ -254,18 +311,23 @@ div.single-autor{
 }
 div.slider-bullets{
 	width: 100%;
-	float: left;
 	margin-top: 1.2rem;
 	padding-left: 3rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 .slider-bullets span{
 	width: 1.6rem;
 	height: 1.6rem;
-	float: left;
 	border-radius: .8rem;
 	cursor: pointer;
 	background-color: rgb(200,200,200);
 	margin-right: .8rem; 
+}
+.slider-bullets .selected{
+	background-color: #232323;
 }
 							/*Contato*/
 
@@ -273,20 +335,23 @@ section#contato{
 	background-color: #472563;
 	padding: 8rem 0;
 }
-.contato-form{
-	float: left;
+#contato > .container-corpo{
+	display: flex;
+	flex-wrap: wrap;
 }
 .contato-form h2{
 	color: white;
 	font-size: 2.4rem;
 	font-weight: lighter;
 	margin-bottom: 1rem;
+	text-shadow: 0 .2rem .3rem rgba(0,0,0,.6);
 }
 .contato-form p{
 	font-size: 1.6rem;
 	color: white;
 	font-weight: lighter;
 	max-width: 40rem;
+	text-shadow: 0 .2rem .3rem rgba(0,0,0,.6);	
 }
 .contato-form form{
 	margin:1.5rem 0;
@@ -320,10 +385,14 @@ section#contato{
 	color: white;
 	cursor: pointer;
 	margin-top: 1rem;
+	transition: .3s;
+}
+.contato-form form input[type=submit]:hover{
+	opacity: .9;
+	color: black;
 }
 
 .mapa{
-	float: left;
 	padding: 0 2%;
 }
 .mapa h2{
@@ -331,6 +400,7 @@ section#contato{
 	font-size: 2.4rem;
 	font-weight: lighter;
 	margin-bottom: 1rem;
+	text-shadow: 0 .2rem .3rem rgba(0,0,0,.6);	
 }
 .map-wrapper2{
 	width: 100%;
@@ -378,6 +448,9 @@ footer p{
 @media screen and (max-width: 768px){
 	section.cta{
 		text-align: center;
+	}
+	.cta-elements{
+
 	}
 	.container-corpo > .servicos-texto{
 		float: none;
@@ -448,7 +521,7 @@ footer p{
 		display: initial;
 	}
 	.cta-elements{
-		margin: 20vh 0;
+		margin: 25vh 0;
 	}
 	.cta-elements h2{
 		font-size: 3rem;
