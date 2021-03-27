@@ -1,3 +1,12 @@
+const precarregado = document.querySelector('.preloader');
+
+window.addEventListener('load',function(){
+	precarregado.style.opacity = '0';
+	setTimeout(function(){
+		precarregado.style.display = 'none';
+	}, 300);
+})
+
 const menuMobileAtivador = document.querySelector('.menu-mobile i');
 
 menuMobileAtivador.addEventListener('click',function(){
