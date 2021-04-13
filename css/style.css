@@ -360,9 +360,18 @@ section#equipe{
 	padding:14rem 0 9rem 0;
 	background-color: white;
 }
-div.single-autor{
+.scroll-equipe{
 	max-width: 60rem;
 	padding-left: 3rem;
+	overflow: hidden;
+}
+.scroll-wrapper{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+div.single-autor{
+	width: 100%;
 }
 .titulo-autor{
 	width: 100%;
@@ -383,7 +392,7 @@ div.single-autor{
 	font-style: italic;
 	font-weight: lighter;
 }
-.titulo-autor .img-autor{
+.img-autor{
 	width: 4rem;
 	height: 4rem;
 	background-image: url("../images/actor1.png");
@@ -391,6 +400,9 @@ div.single-autor{
 	border-radius: 2rem;
 	position: relative;
 	background-color: transparent;
+}
+.single-autor:first-of-type .img-autor{
+	background-image: url("../images/CipherCrowAvatar.png");
 }	
 .texto-autor{
 	width: 100%;
